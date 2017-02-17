@@ -1,5 +1,6 @@
 package com.github.jameswilsonproductions.dynamism;
 
+import com.github.jameswilsonproductions.dynamism.init.ModBlocks;
 import com.github.jameswilsonproductions.dynamism.lib.Reference;
 import com.github.jameswilsonproductions.dynamism.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -23,7 +24,8 @@ public class Main {
 
     @Mod.EventHandler
     public static void preInit(FMLPreInitializationEvent e){
-
+        ModBlocks.init();
+        ModBlocks.register();
     }
 
     @Mod.EventHandler

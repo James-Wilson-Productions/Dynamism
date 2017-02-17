@@ -14,4 +14,24 @@ public class Reference {
     public static final String SERVER_PROXY = "com.github.jameswilsonproductions.dynamism.proxy.ServerProxy";
 
     public static final String ACCEPTED_VERSIONS = "[1.10.2]";
+
+    public enum DynamismBlocks{
+        ENERGYTESTBLOCK("energy_block_test", "energy_block_test");
+
+        private String unlocalizedName;
+        private String registryName;
+
+        DynamismBlocks(String unlocalizedName, String registryName) {
+            this.unlocalizedName = unlocalizedName;
+            this.registryName = registryName;
+        }
+
+        public String getUnlocalizedName() {
+            return unlocalizedName;
+        }
+
+        public String getRegistryName() {
+            return registryName;
+        }
+    }
 }
