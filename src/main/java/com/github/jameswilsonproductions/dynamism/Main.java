@@ -15,7 +15,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
 public class Main {
-    //Commit test from IntelliJ itself.
     @Mod.Instance
     public static Main INSTANCE;
 
